@@ -1,0 +1,67 @@
+.allStreamsGrid {
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+  display: grid;
+  gap: 0rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 6rem;
+  margin-bottom: 0.5rem;
+}
+
+.streamCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f8fb;
+  border-radius: 22px;
+  border: 2px dotted var(--main-blue);
+  color: var(--main-blue);
+  width: 100%;
+  height: 80%;
+  cursor: pointer;
+}
+
+.streamCard:hover {
+  transition: 0.4s;
+  background-color: #e8eef7;
+}
+
+.streamCard:hover .MuiSvgIcon-root {
+  transition: 0.6s;
+  transform: rotate(360deg);
+}
+
+.streamTextContainer {
+  height: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 4px;
+  margin-left: 12px;
+}
+
+.streamTitle {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.streamSubTitle {
+  font-size: 12px;
+  color: var(--font-grey);
+  font-weight: 400;
+  line-height: normal;
+}
+
+.streamSubTitleStreamer {
+  font-size: 12px;
+
+  color: var(--font-grey);
+  line-height: normal;
+}

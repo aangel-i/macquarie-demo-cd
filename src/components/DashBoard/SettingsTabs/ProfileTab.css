@@ -1,0 +1,118 @@
+.personalContainer {
+  width: calc(100% - 2rem);
+  height: 35%;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgba(232, 232, 232, 0.6);
+}
+
+.streamingContainer {
+  width: calc(100% - 2rem);
+  height: 65%;
+  margin: 1rem;
+  margin-top: 0rem;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgba(232, 232, 232, 0.6);
+}
+
+.personalInformationSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personalInformationTitle {
+  margin: 0.7rem;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+
+.personalInformationBottomLeft {
+  margin: 0.8rem;
+  flex: 2;
+  display: flex;
+  justify-content: first baseline;
+}
+
+.personalInformationBottomLeft > img {
+  max-width: 200px;
+  object-fit: cover;
+  width: 150px;
+}
+
+.personalInformationBottomRight {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  justify-content: left;
+}
+
+.personalInformationText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  margin-top: 0.8rem;
+  text-align: left;
+}
+
+.streamingInfoBlock {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  font-size: small;
+}
+
+.saveButtonWrapper {
+  display: flex;
+}
+
+.formWrapper {
+  display: flex;
+
+  height: 380px;
+  padding: 40px;
+  width: 800px;
+}
+
+.inputBox {
+  width: 344px;
+  height: 45px;
+
+  background: rgba(217, 217, 217, 0.6);
+  border-radius: 4px;
+}
+
+.inputLabel {
+  margin-top: 15px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* identical to box height */
+  letter-spacing: 0.01em;
+
+  color: #000000;
+}
+
+.smallBreak {
+  height: 42px;
+}
