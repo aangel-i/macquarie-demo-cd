@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       {user ? (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route exact path="/" element={<DashBoard />} />
             <Route exact path="/BrowseStreams" element={<BrowseStreams />} />
@@ -36,7 +36,7 @@ function App() {
           </Routes>
         </Router>
       ) : (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <NavBar />
           <Routes>
             <Route exact path="/" element={<HomePage />} />

@@ -2,6 +2,7 @@
   "name": "brightstream",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aangel-i.github.io/macquarie-demo-cd",
   "dependencies": {
     "@chakra-ui/react": "^2.4.1",
     "@cucumber/cucumber": "^8.7.0",
@@ -46,6 +47,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "node -e \"require('fs').copyFileSync('build/index.html','build/404.html')\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

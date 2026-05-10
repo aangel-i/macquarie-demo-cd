@@ -8,23 +8,21 @@ import { selectUser } from "../../features/userSlice";
 
 function DashBoard() {
   const user_id = useSelector(selectUser).user;
-  const docRef = doc(db, "users", user_id);
   const [userName, setUserName] = useState("name");
 
-  async function getUserData() {
-    const userdata = await getDoc(docRef);
-    if (userdata.exists()) {
-      const data = userdata.data();
-      setUserName(data.name);
-    } else {
-      // docSnap.data() will be undefined in this case
-      console.log("No such document!");
-    }
-  }
-
   useEffect(() => {
+    async function getUserData() {
+      const docRef = doc(db, "users", user_id);
+      const userdata = await getDoc(docRef);
+      if (userdata.exists()) {
+        const data = userdata.data();
+        setUserName(data.name);
+      } else {
+        console.log("No such document!");
+      }
+    }
     getUserData();
-  }, []);
+  }, [user_id]);
 
   return (
     <div className="dashBoardWrapper">
