@@ -11,7 +11,7 @@ function HomePage() {
       <div className="homeContainer">
         <div className="homeLeft">
           <div className="homeTitle">
-            Not Designed for <br /> online learning :hi
+            Designed for <br /> online learning
           </div>
           <div className="homeText">{hometext}</div>
           <div className="homeButtonContainer">
